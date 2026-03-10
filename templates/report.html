@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>Service Report</h3>
+
+<form method="POST" class="row mb-3">
+
+<div class="col-md-3">
+<input type="date"
+name="start_date"
+class="form-control">
+</div>
+
+<div class="col-md-3">
+<input type="date"
+name="end_date"
+class="form-control">
+</div>
+
+<div class="col-md-2">
+<button class="btn btn-primary">
+Filter
+</button>
+</div>
+
+</form>
+
+<h5>Total Service Fee : ₹ {{total_service}}</h5>
+<h5>Total Govt Fee : ₹ {{total_govt}}</h5>
+
+<hr>
+
+{{table | safe}}
+
+{% endblock %}

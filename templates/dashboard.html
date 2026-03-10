@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>Dashboard</h3>
+
+<h4>Service Fee</h4>
+
+<div class="row">
+
+<div class="col-md-4">
+<div class="card bg-success text-white p-3">
+Today
+<h2>₹ {{data.today_service}}</h2>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card bg-primary text-white p-3">
+Month
+<h2>₹ {{data.month_service}}</h2>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card bg-dark text-white p-3">
+Year
+<h2>₹ {{data.year_service}}</h2>
+</div>
+</div>
+
+</div>
+
+<br>
+
+<h4>Government Fee</h4>
+
+<div class="row">
+
+<div class="col-md-4">
+<div class="card bg-warning text-white p-3">
+Today
+<h2>₹ {{data.today_govt}}</h2>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card bg-danger text-white p-3">
+Month
+<h2>₹ {{data.month_govt}}</h2>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card bg-secondary text-white p-3">
+Year
+<h2>₹ {{data.year_govt}}</h2>
+</div>
+</div>
+
+</div>
+
+{% endblock %}

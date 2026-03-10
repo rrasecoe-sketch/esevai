@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>Edit Service</h3>
+
+<form method="POST">
+
+<input class="form-control mb-3"
+name="name"
+value="{{customer[1]}}">
+
+<input class="form-control mb-3"
+name="mobile"
+value="{{customer[2]}}">
+
+<input class="form-control mb-3"
+name="aadhaar"
+value="{{customer[3]}}">
+
+<input class="form-control mb-3"
+name="service"
+value="{{customer[4]}}">
+
+<input class="form-control mb-3"
+name="govt_fee"
+value="{{customer[5]}}">
+
+<input class="form-control mb-3"
+name="service_fee"
+value="{{customer[6]}}">
+
+<button class="btn btn-success">
+Update
+</button>
+
+</form>
+
+{% endblock %}

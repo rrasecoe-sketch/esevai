@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>Add Service</h3>
+
+<form method="POST">
+
+<input class="form-control mb-3"
+name="name"
+placeholder="Customer Name"
+required>
+
+<input class="form-control mb-3"
+name="mobile"
+placeholder="Mobile"
+required>
+
+<input class="form-control mb-3"
+name="aadhaar"
+placeholder="Aadhaar Number">
+
+<select class="form-control mb-3"
+name="service">
+
+<option>Income Certificate</option>
+<option>Community Certificate</option>
+<option>Nativity Certificate</option>
+<option>Patta Transfer</option>
+<option>Other</option>
+
+</select>
+
+<input class="form-control mb-3"
+name="other_service"
+placeholder="If Other Service">
+
+<input class="form-control mb-3"
+name="govt_fee"
+placeholder="Government Fee"
+required>
+
+<input class="form-control mb-3"
+name="service_fee"
+placeholder="Service Fee"
+required>
+
+<button class="btn btn-success">
+Save Service
+</button>
+
+</form>
+
+{% endblock %}
